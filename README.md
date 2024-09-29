@@ -14,8 +14,13 @@
 Группа WEB-31
 
 ## Запуск 
+Команда №1
 ```bash
-docker-compose up --build
+docker-compose build
+```
+Команда №2
+```bash
+docker-compose up
 ```
 
 ## Api
