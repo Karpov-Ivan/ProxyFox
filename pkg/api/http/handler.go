@@ -114,7 +114,7 @@ func (h *Handler) HandleRepeatRequest(w http.ResponseWriter, r *http.Request) {
 func execute(request *models.RequestResponse) (string, error) {
 	var curlCommand bytes.Buffer
 
-	curlCommand.WriteString("curl -x http://127.0.0.1:8080 ")
+	curlCommand.WriteString("curl -x http://go-app-8080:8080 ")
 	if request.Request.Method != "CONNECT" {
 		curlCommand.WriteString("-X ")
 		curlCommand.WriteString(request.Request.Method)
